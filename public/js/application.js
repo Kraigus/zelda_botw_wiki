@@ -1,11 +1,8 @@
 const $cardContainer = document.querySelector('#post_container_wrapper');
 const $profile = document.querySelector('#profile');
-const $indexContainer = document.querySelector('#index-container')
-console.log($profile);
-console.log($cardContainer);
-console.log($indexContainer);
+const $indexContainer = document.querySelector('#index-container');
+const $preloader = document.querySelector('.preloader');
 const swiper = new Swiper('.swiper-container', {
-  // Optional parameterse
   slidesPerView: 4,
   spaceBetween: 10,
   on: {
@@ -15,6 +12,7 @@ const swiper = new Swiper('.swiper-container', {
         $cardContainer?.classList.remove('opacity');
         $profile?.classList.remove('opacity');
         $indexContainer?.classList.remove('opacity');
+        $preloader.remove();
       }, 100);
     },
   },

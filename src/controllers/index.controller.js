@@ -1,7 +1,5 @@
-const { response } = require('express');
-const hyrule_compendium = require('hyrule-compendium');
 const fetch = require('node-fetch');
-let comp = new hyrule_compendium.compendium();
+
 
 const renderIndexPage = async (req, res) => {
   const mainUrl = `https://botw-compendium.herokuapp.com/api/v2`;
