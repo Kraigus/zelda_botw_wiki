@@ -1,0 +1,26 @@
+<div id="post_container_wrapper" class="swiper-container card-container opacity">
+<div id="post_container" class="swiper-wrapper m-2">
+  {{#each allEntries}}
+  <div class="card swiper-slide" style="max-width: 200px; height: 450px;">
+    <a href="/post/{{this.id}}"><img src="{{this.image}}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <p class="card-text"><strong>Name:</strong> {{this.name}}</p>
+      {{#if this.attack}}
+      <p class="card-text"><strong>Attack:</strong> {{this.attack}}</p>
+      {{/if}}
+      {{#if this.defense}}
+      <p class="card-text"><strong>Defense:</strong> {{this.defense}}</p>
+      {{/if}}
+      <p class="card-text"><strong>Category:</strong> {{this.category}}</p>
+      {{#if this.common_locations}}
+      <ul><strong>Habitats</strong>
+      {{#each this.common_locations}}
+      <li class="card-text">{{this}}</li>
+      {{/each}}
+      </ul>
+      {{/if}}
+    </div>
+  </div>
+  {{/each}}
+</div>
+</div>

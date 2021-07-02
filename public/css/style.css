@@ -1,0 +1,28 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  /* height: 100%; */
+}
+
+#card-body {
+  overflow-y: scroll;
+  max-height: 350px;
+}
+#post_container {
+  overflow-y: auto;
+}
+.card-container,
+.profile,
+.index-container {
+  transition: 1s;
+  opacity: 1;
+}
+.opacity {
+  opacity: 0;
+}

@@ -1,0 +1,27 @@
+<div class="container mt-2" style="width: 500px">
+  <form data-finder method="POST" action="/post/view">
+    <div class="mb-3">
+      <label for="name" class="form-label">Type name or id: </label>
+      <input type="name" class="form-control" id="name" name="name">
+    </div>
+    <button type="submit" class="btn btn-primary">FIND</button>
+  </form>
+</div>
+<div id="index-container" class="container index-container swiper-container opacity mt-2">
+{{#each allEntries}}
+<div class="card mb-3" style="">
+  <div class="row g-0">
+    <div class="col-md-2">
+      <a href="/post/{{this.id}}"><img src="{{this.image}}" alt="logo"></a>
+    </div>
+    <div class="col-md-10">
+      <div class="card-body">
+        <h5 class="card-title">{{this.name}}</h5>
+        <p class="card-text">{{this.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}
+</div>
+

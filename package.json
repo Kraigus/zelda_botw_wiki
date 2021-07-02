@@ -1,0 +1,33 @@
+{
+  "name": "zelda_botw_wiki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kraigus/zelda_botw_wiki.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kraigus/zelda_botw_wiki/issues"
+  },
+  "homepage": "https://github.com/Kraigus/zelda_botw_wiki#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "hyrule-compendium": "^1.5.1",
+    "mongoose": "^5.13.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.9"
+  }
+}
